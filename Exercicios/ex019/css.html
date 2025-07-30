@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            background-image: linear-gradient(to right, #babaffb6, rgba(89, 89, 255, 0.863));
+        }
+        h1 {
+            font: bold 3em arial, sans-serif;
+            text-align: center;
+            color: black;
+            background-color: rgb(255, 255, 108);
+        }
+        h2 {
+            font: bold 2em arial, sans-serif;
+            text-align: center;
+            color: rgb(116, 2, 2);
+            background-color: antiquewhite;
+        }
+        h3 {
+            font: bold 1.5em arial, sans-serif;
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+            text-indent: 30px;
+        }
+        #principal {
+            font: bolder 4em;
+        }
+        .primeiro {
+            color: red;
+        }
+        .segundo {
+            color: green;
+        }
+        .terceiro {
+            background-color: rgb(80, 80, 241);
+        }
+        .quarto {
+            background-color: rgb(255, 255, 94);
+            width: 50px;            
+        }
+        .primeiro:hover {
+            color: yellow;
+            background-color: black;
+        }
+        .primeiro::before {
+            content: '>> ';
+        }
+        .primeiro::after {
+            content: ' <<';
+        }
+        .quarto > ul {
+            display: none;
+        }
+        .quarto:hover > ul {
+            display: block;
+            width: 200px;
+        }
+        
+        .quarto:hover {
+            color: yellow;
+            background-color: black;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="principal">Treinando CSS</h1>
+        <nav>
+            <a href="#">Historia</a>
+            <a href="#">Novidades</a>
+            <a href="#">Referencias</a>    
+        
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="primeiro">Historia</h2>
+            <p class="terceiro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maiores explicabo iure facere impedit odit, nobis laboriosam eum, in totam nesciunt deleniti cumque exercitationem vitae fugit, est tempore repellat consectetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque excepturi nesciunt ratione nisi sequi doloremque alias porro impedit, modi sapiente ex ab rerum explicabo. Sunt reprehenderit voluptatum hic dolores iste!</p>
+            <ol type="I">
+                <li>Alguem</li>
+                <li>Pao</li>
+                <li>Agua</li>
+                <li>Tomate</li>
+            </ol>
+        </section>
+        <section>
+            <article>
+                <h2 class="segundo">Novidades</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum iusto quod qui corrupti asperiores deserunt sapiente animi architecto expedita, earum placeat natus molestias nesciunt id. Modi voluptatibus doloremque illum!</p>
+                
+                <div class="quarto">Tipos:
+                    <ul type="square" class="terceiro">
+                    <li>Agua
+                        <ul type="disc">
+                            <li>Gas</li>
+                            <li>natural</li>
+                            <li>saborizada</li>
+                        </ul>
+                    </li>
+                    <li>Sorvete
+                        <ul type="disc">
+                            <li>morango</li>
+                            <li>chocolate</li>
+                            <li>uva</li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est molestiae quasi commodi minus deserunt! Quod exercitationem aliquid odit obcaecati dolorem dignissimos hic dolor. Cumque sapiente molestias sequi similique? Soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, necessitatibus! Explicabo, reiciendis esse. A, amet odio? Voluptatibus repellat asperiores nisi. Ea est quod delectus iure repellat iste tenetur natus. Repellendus!</p>
+            </article>
+            <article>
+                <h2 class="primeiro">Referencias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam, voluptates est suscipit at repellendus, fugit natus vel dolore illo repellat? Magni molestias neque perferendis modi unde facere repudiandae odio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ea ex, aspernatur in eligendi facere incidunt soluta nostrum eum velit quae praesentium! Quisquam dicta tempore minima sint, laborum eveniet aliquam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nihil, tempora nostrum ex exercitationem inventore voluptas, animi rerum odit molestias corporis laboriosam eius voluptate nisi molestiae consequuntur distinctio excepturi laborum.</p>
+            </article>
+        </section>
+    </main>
+    <footer><small>Escrito por mim mesmo para treinamento de CSS</small></footer>
+    
+</body>
+</html>
