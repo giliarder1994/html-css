@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere at eaque deserunt, tempore mollitia sapiente similique? Natus maiores ipsum nulla harum sed, enim rerum dolor architecto necessitatibus? Nesciunt, magni laboriosam.</p>
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira Pagina</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda pagina</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira pagina</a></li>
+        
+        <!--para utilizar o conteudo da pagina dentro o iframe da pagina principal é só utilizar a tag 'name' dentro o iframe e quando for direcionar o caminho no link em target colocar apenas o nome dado no iframe-->
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis sunt quaerat id, excepturi modi repellat harum necessitatibus fuga. Facere, officia magnam reiciendis omnis voluptatem dolorum cumque sequi reprehenderit dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae accusantium, consectetur distinctio assumenda modi dolore mollitia veniam, error vero exercitationem sint corrupti itaque, molestiae cumque placeat odit aperiam eaque odio?</p>
+
+    <iframe src="" id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis sunt quaerat id, excepturi modi repellat harum necessitatibus fuga. Facere, officia magnam reiciendis omnis voluptatem dolorum cumque sequi reprehenderit dolore!</p><img src='logo-css-200.png'>">
+        <p>Infelizmente seu navegador nao é compativel com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quod aliquam eligendi molestias minus dolorem voluptas ipsam, ea corrupti? Facilis odio iste placeat sequi assumenda quasi quaerat quo. Omnis, reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officia reprehenderit, saepe quasi eius nam eveniet suscipit vero unde asperiores vitae ex sapiente? Quis natus vel delectus, debitis facere voluptatem.</p>
+    
+</body>
+</html>
