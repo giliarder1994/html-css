@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="3" maxlength="15" size="10" placeholder="Nome do Usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="8" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
+
+<!--GET é mais rapido, porem requer poucos caracteres
+    POST é menos rapido mas comporta até 3000 caracteres-->
+
+<!--"required" para que bloquei o botão enviar caso nao tenha sido preenchido nenhum campo obrigatorio-->
+
+<!--minlength="" maxlength="" minimo de caracteres no campo e maximo de caracteres no campo-->
+
+<!--size="10" tamanho da caixa do formulario-->
+
+<!--placeholder="Nome do Usuário" texto de fundo de dentro da caixa-->
+
+<!--autocomplete="off" não faz aparecer as sugestoes de nomes ja pesquisados ou digitados-->
